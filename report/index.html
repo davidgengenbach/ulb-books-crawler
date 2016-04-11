@@ -12,18 +12,19 @@
 </head>
 
 <body ng-app="ulbBookReport" ng-controller="MainCtrl">
-    <div layout-padding ng-cloak>
+    <md-content layout-padding ng-cloak>
         <md-whiteframe class="md-whiteframe-4dp course" ng-repeat="course in books">
             <h2 class="md-display-1">{{course.name}}</h2>
             <div ng-repeat="book in course.books">
-                <h3>Book: {{book.title}}</h3>
+                <h3>Searched for: {{book.title}}</h3>
                 <h4>Candidates</h4>
                 <div class="candidates" ng-repeat="candidate in book.candidates">
                     <a ng-href="{{candidate.url}}">{{candidate.title}}</a>
                 </div>
+                <md-divider layout-margin ng-if="!$last"></md-divider>
             </div>
         </md-whiteframe>
-    </div>
+    </md-content>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-animate/angular-animate.min.js"></script>
