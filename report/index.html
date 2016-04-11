@@ -11,13 +11,15 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body ng-app="ulbBookReport" ng-controller="MainCtrl">
-        <div ng-repeat="course in books">
-            <h2>{{course.name}}</h2>
-            <div ng-repeat="book in course.books">
-                {{book.title}}
-
-                <div ng-repeat="candidate in book.candidates">
-                <a ng-href="{{candidate.url}}">{{candidate.title}}</a>
+        <div class="content">
+            <div class="courses" ng-repeat="course in books">
+                <h2>Course: {{course.name}}</h2>
+                <div ng-repeat="book in course.books">
+                    <h3>Book: {{book.title}}</h3>
+                    <h4>Candidates</h4>
+                    <div class="candidates" ng-repeat="candidate in book.candidates">
+                        <a ng-href="{{candidate.url}}">{{candidate.title}}</a>
+                    </div>
                 </div>
             </div>
         </div>
