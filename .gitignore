@@ -1,0 +1,6 @@
+node_modules
+.DS_Store
+books-processed.json
+report/books.json
+books.json
+report/bower_components

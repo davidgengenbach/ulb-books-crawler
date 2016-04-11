@@ -1,0 +1,13 @@
+[{
+    "name": "CE und Robotik",
+    "books": [{
+        "author": "Föllinger",
+        "title": "Einführung in die Zustandsbeschreibung dynamischer Systeme"
+    }]
+}, {
+    "name": "Rechnerorganisation",
+    "books": [{
+        "author": "Harris",
+        "title": "Digital Design and Computer Architecture"
+    }]
+}]
