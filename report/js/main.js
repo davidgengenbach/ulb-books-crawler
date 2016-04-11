@@ -1,5 +1,5 @@
 angular
-    .module('ulbBookReport', [])
+    .module('ulbBookReport', ['ngMaterial'])
     .controller('MainCtrl', function($scope, $http) {
         $http
             .get('books.json')
